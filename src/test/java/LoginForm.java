@@ -26,17 +26,23 @@ public class LoginForm extends PageObject{
         enterPassword("");
         pressLoginButton();
     }
+
+    public void loginWithJustUserName(){
+        enterUsername(USERNAME);
+        enterPassword("");
+        pressLoginButton();
+    }
+
     public void loginWithCorrectdata(){
         enterUsername(USERNAME);
         enterPassword(PASSWORD);
         pressLoginButton();
 
     }
-    public void loginWithUserName(){
+    public void loginWithWrongPass(){
         enterUsername(USERNAME);
         enterPassword(INVALID_PASSWORD);
         pressLoginButton();
-
     }
 
     private void enterUsername(String cad){
