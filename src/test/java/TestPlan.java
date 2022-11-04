@@ -45,6 +45,8 @@ public class TestPlan {
 
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         InitPage productPage = new InitPage(driver);
+        Assert.assertEquals(productPage.getTitle(), "Bienvenido a OSTH On-Line");
+
     }
 
     @Test(testName = "Case 4: Login with wrong password")
