@@ -21,14 +21,19 @@ public class LoginForm extends PageObject{
     public void loginWithNodata(){
         enterUsername("");
         enterPassword("");
+        pressLoginButton();
     }
     public void loginWithCorrectdata(){
         enterUsername("dumbridge");
         enterPassword("tomriddle");
+        pressLoginButton();
+
     }
     public void loginWithUserName(){
         enterUsername("dumbridge");
         enterPassword("qwergds");
+        pressLoginButton();
+
     }
 
     private void enterUsername(String cad){
