@@ -14,7 +14,6 @@ public class LoginForm extends PageObject{
     private WebElement password;
 
     @FindBy(xpath = "//button")
-    //@FindBy(id = "")//login-button")
     private WebElement login_button;
 
 

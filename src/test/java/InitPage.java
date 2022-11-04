@@ -6,7 +6,7 @@ public class InitPage extends PageObject{
     @FindBy(id = "estado")
     private WebElement mensaje;
 
-    @FindBy(xpath = "//span[contains(text(),'Bienvenido a OSTH On-Line')]")
+    @FindBy(xpath = "//h3")
     private WebElement init_label;
     public InitPage(WebDriver driver) {
         super(driver);
