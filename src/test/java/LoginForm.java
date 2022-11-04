@@ -7,7 +7,7 @@ public class LoginForm extends PageObject{
     private final String PASSWORD="tomriddle";
     private final String INVALID_PASSWORD="dsfg";
 
-    @FindBy(id = "user-name")
+    @FindBy(id = "username")
     private WebElement username;
 
     @FindBy(id = "password")
