@@ -10,6 +10,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Tarea7" />
+        <module name="Tarea7-VVS" />
       </profile>
     </annotationProcessing>
   </component>
