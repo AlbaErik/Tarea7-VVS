@@ -3,6 +3,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginForm extends PageObject{
+    private final String USERNAME="dumbridge";
+    private final String PASSWORD="tomriddle";
+    private final String INVALID_PASSWORD="dsfg";
 
     @FindBy(id = "user-name")
     private WebElement username;
@@ -24,14 +27,14 @@ public class LoginForm extends PageObject{
         pressLoginButton();
     }
     public void loginWithCorrectdata(){
-        enterUsername("dumbridge");
-        enterPassword("tomriddle");
+        enterUsername(USERNAME);
+        enterPassword(PASSWORD);
         pressLoginButton();
 
     }
     public void loginWithUserName(){
-        enterUsername("dumbridge");
-        enterPassword("qwergds");
+        enterUsername(USERNAME);
+        enterPassword(INVALID_PASSWORD);
         pressLoginButton();
 
     }
