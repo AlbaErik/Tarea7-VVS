@@ -30,7 +30,7 @@ public class TestPlan {
     public static void loginUserName(){
         driver.get(Utils.BASE_URL);
         LoginForm loginForm = new LoginForm(driver);
-        loginForm.loginWithUserName();
+        loginForm.loginWithJustUserName();
 
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         InitPage productPage = new InitPage(driver);
@@ -53,7 +53,7 @@ public class TestPlan {
     public static void loginWrongPassword(){
         driver.get(Utils.BASE_URL);
         LoginForm loginForm = new LoginForm(driver);
-        loginForm.loginWithUserName();
+        loginForm.loginWithWrongPass();
 
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         InitPage productPage = new InitPage(driver);
